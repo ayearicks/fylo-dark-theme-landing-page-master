@@ -20,7 +20,8 @@
 body {
     font-size: 14px;
     font-family: var(--OpenSans);
-    background-color: var(--IntroEmail);
+    background-color: var(--MainBackground);
+    color: var(--White);
     margin: 0;
     padding: 0;
 }
@@ -28,6 +29,7 @@ body {
 // Top Background
 .top-curvy-background {
     background-image: url(./images/bg-curvy-desktop.svg);
+    background-color: var(--IntroEmail);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
@@ -37,7 +39,7 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    margin: 5rem;
+    padding: 5rem;
 }
 
 #nav-links {
@@ -47,8 +49,8 @@ nav {
     width: 30vw;
     
     a {
-        text-decoration: none;
         color: var(--White);
+        text-decoration: none;
         font-family: var(--Raleway);
     }
     
@@ -61,7 +63,6 @@ nav {
 // Header
 header {
     text-align: center;
-    color: var(--White);
     font-family: var(--Raleway);
     font-size: 1.2rem;
     width: 50%;
@@ -75,8 +76,8 @@ header {
 
 #top-cta-btn {
     background-color: var(--CyanCTA);
-    text-decoration: none;
     color: var(--White);
+    text-decoration: none;
     padding: 15px 80px;
     border-radius: 30px;
     font-size: 1.5rem;
@@ -88,7 +89,6 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 2;
-    color: var(--White);
     background-color: var(--MainBackground);
     text-align: center;
     align-items: center;
@@ -125,7 +125,6 @@ header {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    color: var(--White);
     background-color: var(--MainBackground);
 }
 
@@ -151,9 +150,9 @@ header {
 #testimonials {
     display: grid;
     grid-template-columns: repeat(3, 1fr);    
-    color: var(--White);
     padding: 8rem;
     background-image: url(/images/bg-quotes.png);
+    background-color: var(--MainBackground);
     background-repeat: no-repeat;
     background-position: 10% 22.5%;
     
@@ -199,12 +198,118 @@ header {
 }
 
 
+// Bottom CTA
+#bottom-cta {
+    background-color: var(--MainBackground);
+    text-align: center;
+    width: 50%;
+    padding: 2rem 5rem;
+    margin: 0 auto;
+    margin-bottom: -5rem;
+    position: relative;
+    z-index: 99;
+    box-shadow: 3px 3px 5px 0px #000000;
+    border-radius: 5px;
+
+    h4 {
+        font-size: 32px;
+        margin-top: 0;
+        font-family: var(--Raleway);
+    }
+    p {
+        font-family: var(--OpenSans);
+    }
+
+    input {
+        padding: 1rem 5rem;
+        width: 40%;
+        margin-top: 1rem;
+        border: 0;
+        border-radius: 30px;
+        
+        ::placeholder {
+            opacity: .2;
+        }
+    }
+
+    button {
+        background-color: var(--CyanCTA);
+        color: var(--White);
+        border: 0;
+        border-radius: 30px;
+        padding: 20px 55px;
+        margin-left: 1rem;
+        
+    }
+}
+
+
+// Footer 
+footer {
+    background-color: var(--FooterBackground);
+    z-index: -1;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);  
+    justify-items: center;
+    align-items: center;
+    padding: 10rem 5rem;
+
+    .footer-text {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2rem;
+
+        img {
+            height: 5%;
+            padding: 1rem;
+        }
+    }
+
+    .footer-contact {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+
+        img {
+            width: 5%;
+            padding: 1rem;
+        }
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            margin: 1rem 0;
+        }
+
+        a {
+            color: var(--White);
+            text-decoration: none;
+        }
+    }
+
+    #social-links {
+        display: flex;
+        flex-direction: row;
+
+        li {
+            border: 1px solid var(--White);
+            border-radius: 50%;
+            padding: .5rem;
+        }
+    }
+}
 
 
 
+// Attribution Links
 .attribution { 
     font-size: 11px; 
     text-align: center; 
+    padding: 2rem;
+    margin: 0;
+    background-color: var(--FooterBackground);
 }
 
 .attribution a { 
