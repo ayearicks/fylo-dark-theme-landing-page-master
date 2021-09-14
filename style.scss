@@ -1,0 +1,191 @@
+// Global Styles
+:root {
+    // Primary
+    --IntroEmail: hsl(217, 28%, 15%);
+    --MainBackground: hsl(218, 28%, 13%);
+    --FooterBackground: hsl(216, 53%, 9%);
+    --TestimonialsBackground: hsl(219, 30%, 18%);
+    // Accent
+    --CyanCTA: hsl(176, 68%, 64%);
+    --BlueCTA: hsl(198, 60%, 50%);
+    --RedError: hsl(0, 100%, 63%);
+    // Neutral
+    --White: hsl(0, 0%, 100%);
+    // Fonts - Headings/CTA/Header Navigation
+    --Raleway: 'Raleway', sans-serif;
+    // Body
+    --OpenSans: 'Open Sans', sans-serif;
+}
+
+body {
+    font-size: 14px;
+    font-family: var(--OpenSans);
+    background-color: var(--IntroEmail);
+    margin: 0;
+    padding: 0;
+}
+
+// Top Background
+.top-curvy-background {
+    background-image: url(./images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+// Navigation
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem;
+}
+
+#nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 30vw;
+    
+    a {
+        text-decoration: none;
+        color: var(--White);
+        font-family: var(--Raleway);
+    }
+    
+    a:hover {
+        color: var(--CyanCTA);
+    }
+}
+
+
+// Header
+header {
+    text-align: center;
+    color: var(--White);
+    font-family: var(--Raleway);
+    font-size: 1.2rem;
+    width: 50%;
+    margin: 0 auto;
+    
+   
+    p {
+        margin: 0 auto 3rem auto;
+    }
+}
+
+#top-cta-btn {
+    background-color: var(--CyanCTA);
+    text-decoration: none;
+    color: var(--White);
+    padding: 15px 80px;
+    border-radius: 30px;
+    font-size: 1.5rem;
+}
+
+
+// Grid Mini Cards
+#grid-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2;
+    color: var(--White);
+    background-color: var(--MainBackground);
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    row-gap: 5rem;
+    padding: 10rem;
+    
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    img {
+        max-width: 15%;
+        align-self: center;
+    }
+    
+    h2 {
+        font-family: var(--Raleway);
+    }
+    
+    p {
+        width: 70%;
+        align-self: center;
+    }
+}
+
+
+// CTA Break
+#productive {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--White);
+    background-color: var(--MainBackground);
+}
+
+#productive-text {
+    max-width: 40%;
+    
+    h2 {
+        font-size: 32px;
+    } 
+    
+    p {
+        font-size: 16px;
+    }
+
+    a {
+        color: var(--CyanCTA);
+        text-decoration: underline;
+    }
+}
+ 
+
+// Testimonials
+#testimonials {
+    background-image: url(/images/bg-quotes.png);
+    background-repeat: no-repeat;
+    background-position: center left;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);    
+    color: var(--White);
+    padding: 8rem;
+    
+    .test-card {        
+        background-color: var(--TestimonialsBackground);
+        box-shadow: 11px 9px 5px 0px hsl(216, 53%, 9%);
+        margin: 1rem;
+        border-radius: 5px;
+    }
+    
+    .test-inner {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    
+    .profile-img {
+        border-radius: 50%;
+        width: 10%;
+    }
+}
+
+
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
