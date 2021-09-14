@@ -166,15 +166,15 @@ header p {
 }
 
 #testimonials {
-  background-image: url(/images/bg-quotes.png);
-  background-repeat: no-repeat;
-  background-position: center left;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   color: var(--White);
   padding: 8rem;
+  background-image: url(/images/bg-quotes.png);
+  background-repeat: no-repeat;
+  background-position: 10% 22.5%;
 }
 
 #testimonials .test-card {
@@ -185,22 +185,42 @@ header p {
   border-radius: 5px;
 }
 
+#testimonials .test-card p {
+  padding: 1rem;
+  line-height: 1.8;
+}
+
 #testimonials .test-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1rem;
 }
 
 #testimonials .profile-img {
   border-radius: 50%;
   width: 10%;
+}
+
+#testimonials .profile-info {
+  font-size: 10px;
+  padding-left: .5rem;
+}
+
+#testimonials .profile-info h3 {
+  font-weight: 700;
+  margin: 0;
+}
+
+#testimonials .profile-info p {
+  padding: 0;
+  margin: 0;
 }
 
 .attribution {
