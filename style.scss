@@ -213,7 +213,76 @@ nav {
         }
     }
 }
+#access-bg {
+    background-color: var(--MainBackground);
+    padding: 2.5rem 0;
+}
+#access {
+    background-color: var(--TestimonialsBackground);
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 10px;
+    box-shadow: 5px 6px 20px -4px #000000;
+    position: relative;
+    z-index: 99;
+    
+    h5 {
+        font-family: var(--Raleway);
+        font-weight: 700;
+        font-size: 24px
+    }
 
+    p {
+        font-family: var(--OpenSans);
+        line-height: 2;
+    }
+
+    form {
+        input {
+            border: 0;
+            border-radius: 30px;
+            padding: 1rem;
+        }
+        
+        button {
+            color: var(--White);
+            background-color: var(--BlueCTA);
+            border-radius: 30px;
+            padding: 15px 25px;
+            margin: .5rem;
+        }
+    }
+}
+
+
+#footer {
+    background-color: var(--FooterBackground);
+    padding-top: 15rem;
+    margin-top: -15rem;
+    z-index: 0;
+
+    .d-flex img {
+        height: 5%;
+        padding-right: .5rem;
+    }
+
+    .nav-link {
+        color: var(--White);
+        font-family: var(--OpenSans);
+        font-size: 22px;
+    }
+
+    .social-links {
+        border: 1px solid var(--White);
+        border-radius: 50%;
+        color: var(--White); 
+        font-size: 20px;
+        padding: .8rem 1rem;
+        margin: 0 1.5rem;
+    }
+    
+}
 
 // Attribution Links
 .attribution { 
