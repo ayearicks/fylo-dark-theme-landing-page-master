@@ -12,295 +12,54 @@
     // Neutral
     --White: hsl(0, 0%, 100%);
     // Fonts - Headings/CTA/Header Navigation
-    --Raleway: 'Raleway', sans-serif;
+    --Raleway: 'Raleway', sans-serif; //400,700
     // Body
-    --OpenSans: 'Open Sans', sans-serif;
+    --OpenSans: 'Open Sans', sans-serif; //400, 700
 }
 
 body {
+    box-sizing: border-box;
     font-size: 14px;
     font-family: var(--OpenSans);
     background-color: var(--MainBackground);
     color: var(--White);
-    margin: 0;
-    padding: 0;
 }
 
-// Top Background
-.top-curvy-background {
-    background-image: url(./images/bg-curvy-desktop.svg);
-    background-color: var(--IntroEmail);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom;
-}
-
-// Navigation
 nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 5rem;
-}
-
-#nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    width: 30vw;
-    
-    a {
-        color: var(--White);
-        text-decoration: none;
-        font-family: var(--Raleway);
-    }
-    
-    a:hover {
-        color: var(--CyanCTA);
-    }
-}
-
-
-// Header
-header {
-    text-align: center;
-    font-family: var(--Raleway);
-    font-size: 1.2rem;
-    width: 50%;
-    margin: 0 auto;
-    
-   
-    p {
-        margin: 0 auto 3rem auto;
-    }
-}
-
-#top-cta-btn {
-    background-color: var(--CyanCTA);
-    color: var(--White);
-    text-decoration: none;
-    padding: 15px 80px;
-    border-radius: 30px;
-    font-size: 1.5rem;
-}
-
-
-// Grid Mini Cards
-#grid-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 2;
     background-color: var(--MainBackground);
-    text-align: center;
-    align-items: center;
-    justify-items: center;
-    justify-content: space-around;
-    row-gap: 5rem;
-    padding: 10rem;
-    
-    div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    img {
-        max-width: 15%;
-        align-self: center;
-    }
-    
-    h2 {
-        font-family: var(--Raleway);
-    }
-    
-    p {
-        width: 70%;
-        align-self: center;
-    }
-}
+    padding: 1rem;
+    margin-top: .5rem;
 
-
-// CTA Break
-#productive {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: var(--MainBackground);
-}
-
-#productive-text {
-    max-width: 40%;
-    
-    h2 {
-        font-size: 32px;
-    } 
-    
-    p {
-        font-size: 16px;
+    .navbar-brand img {
+        max-width: 50%;
     }
 
-    a {
-        color: var(--CyanCTA);
-        text-decoration: underline;
-    }
-}
- 
-
-// Testimonials
-#testimonials {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);    
-    padding: 8rem;
-    background-image: url(/images/bg-quotes.png);
-    background-color: var(--MainBackground);
-    background-repeat: no-repeat;
-    background-position: 10% 22.5%;
-    
-    .test-card {        
-        background-color: var(--TestimonialsBackground);
-        box-shadow: 11px 9px 5px 0px hsl(216, 53%, 9%);
-        margin: 1rem;
+    #navigation {
+        text-align: center;
+        padding-top: 2rem;
+        background-color: var(--IntroEmail);
         border-radius: 5px;
-
-        p {
-            padding: 1rem;
-            line-height: 1.8;
-        }
-    }
     
-    .test-inner {
-        display: flex;
-        justify-content:start;
-        align-items: center;
-        padding: 1rem;
-    }
-    
-    .profile-img {
-        border-radius: 50%;
-        width: 10%;
-    }
-
-    .profile-info {
-        font-size: 10px;
-        padding-left: .5rem;
-
-        h3 {
-            font-weight: 700;
-            margin: 0;
-        }
-
-        p {
-            padding: 0;
-            margin: 0;
-        }
-
-    }
-}
-
-
-// Bottom CTA
-#bottom-cta {
-    background-color: var(--MainBackground);
-    text-align: center;
-    width: 50%;
-    padding: 2rem 5rem;
-    margin: 0 auto;
-    margin-bottom: -5rem;
-    position: relative;
-    z-index: 99;
-    box-shadow: 3px 3px 5px 0px #000000;
-    border-radius: 5px;
-
-    h4 {
-        font-size: 32px;
-        margin-top: 0;
-        font-family: var(--Raleway);
-    }
-    p {
-        font-family: var(--OpenSans);
-    }
-
-    input {
-        padding: 1rem 5rem;
-        width: 40%;
-        margin-top: 1rem;
-        border: 0;
-        border-radius: 30px;
-        
-        ::placeholder {
-            opacity: .2;
-        }
-    }
-
-    button {
-        background-color: var(--CyanCTA);
-        color: var(--White);
-        border: 0;
-        border-radius: 30px;
-        padding: 20px 55px;
-        margin-left: 1rem;
-        
-    }
-}
-
-
-// Footer 
-footer {
-    background-color: var(--FooterBackground);
-    z-index: -1;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);  
-    justify-items: center;
-    align-items: center;
-    padding: 10rem 5rem;
-
-    .footer-text {
-        display: flex;
-        flex-direction: row;
-        margin-top: 2rem;
-
-        img {
-            height: 5%;
-            padding: 1rem;
-        }
-    }
-
-    .footer-contact {
-        display: flex;
-        flex-direction: row;
-        margin: 0 auto;
-
-        img {
-            width: 5%;
-            padding: 1rem;
-        }
-    }
-
-    ul {
-        list-style: none;
-
-        li {
-            margin: 1rem 0;
-        }
-
-        a {
+        .nav-link {
             color: var(--White);
-            text-decoration: none;
-        }
-    }
-
-    #social-links {
-        display: flex;
-        flex-direction: row;
-
-        li {
-            border: 1px solid var(--White);
-            border-radius: 50%;
-            padding: .5rem;
         }
     }
 }
 
+
+#hero {
+    background-image: url(/images/bg-curvy-mobile.svg);
+}
+
+#hero #hero-img {
+    width: 100%;
+    padding: 1rem;
+}
+
+
+#info-cards .card {
+    width: 18rem;
+}
 
 
 // Attribution Links
@@ -315,3 +74,4 @@ footer {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
