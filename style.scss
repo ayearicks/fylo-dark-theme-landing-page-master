@@ -48,6 +48,18 @@ nav {
 }
 
 
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    nav {
+        #navigation {
+            background-color: var(--IntroEmail);
+            margin-bottom: 2rem;
+        }
+    }
+ }
+
+
 #hero {
 
     .bg-curve {
@@ -94,6 +106,44 @@ nav {
 
 
 
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    #hero {
+        .bg-curve {
+            background-image: url(/images/bg-curvy-desktop.svg);
+        }
+
+        .top-cta {
+            padding: 0 2.5rem;
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    #hero {
+        #hero-img {
+            width: 60%;
+            margin-left: 13rem;
+        }
+    }
+ }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    #hero {
+        #hero-img {
+            height: 100%;
+            margin: 0 15rem;
+        }
+    }
+ }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { }
+
+
+
 
 
 #info-cards {
@@ -121,6 +171,13 @@ nav {
         font-family: var(--OpenSans);
     }
 }
+
+
+
+
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { }
 
 
 #productive {
@@ -154,7 +211,7 @@ nav {
             content: "";
             position: absolute;
             bottom: 0;
-            width: 50%;
+            width: 175px;
             border-bottom: 2px solid var(--CyanCTA);
         }
     
@@ -171,6 +228,49 @@ nav {
     }
 }
 
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    #productive {
+        #underline {
+            .btn {
+                margin-left: 1.5rem;
+            }
+        }
+    }
+ }
+
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    #productive {
+        img {
+            height: 100%;
+        }
+
+        #underline {
+            img {
+                margin: 0;
+            }
+        }
+    }
+ }
+
+ //X-Large devices (large desktops, 1200px and up)
+ @media (min-width: 1200px){
+    #productive {
+        #underline {
+            .btn {
+                margin-left: 2rem;
+            }
+        }
+    }
+ }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { }
+
 #testimonials {
     padding: 5rem 0;
     background-color: var(--MainBackground);
@@ -182,6 +282,7 @@ nav {
         background-color: var(--TestimonialsBackground);
         box-shadow: 9px 6px 6px -2px #000000;
         margin: 2.5rem 1rem;
+        border-radius: 10px;
         padding: 1.5rem;
         width: 90%;
 
@@ -213,6 +314,35 @@ nav {
         }
     }
 }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    #testimonials {
+        background-position: 60px 80px;
+    }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    #testimonials {
+        background-position: 60px 85px;
+    }
+ }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    #testimonials {
+        background-position: 130px 85px;
+
+        .quote {
+            width: 25%;
+        }
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { }
+
 #access-bg {
     background-color: var(--MainBackground);
     padding: 2.5rem 0;
@@ -256,6 +386,19 @@ nav {
 }
 
 
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    #access {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+ }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { }
+
+
 #footer {
     background-color: var(--FooterBackground);
     padding-top: 15rem;
@@ -283,6 +426,17 @@ nav {
     }
     
 }
+
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    #footer {
+        margin-top: -10rem;
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { }
 
 // Attribution Links
 .attribution { 
