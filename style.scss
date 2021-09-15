@@ -21,14 +21,14 @@ body {
     box-sizing: border-box;
     font-size: 14px;
     font-family: var(--OpenSans);
-    background-color: var(--MainBackground);
+    background-color: var(--IntroEmail);
     color: var(--White);
 }
 
 nav {
-    background-color: var(--MainBackground);
     padding: 1rem;
     margin-top: .5rem;
+    font-family: var(--Raleway);
 
     .navbar-brand img {
         max-width: 50%;
@@ -36,8 +36,9 @@ nav {
 
     #navigation {
         text-align: center;
-        padding-top: 2rem;
-        background-color: var(--IntroEmail);
+        padding-top: 1rem;
+        margin-top: 1rem;
+        background-color: var(--MainBackground);
         border-radius: 5px;
     
         .nav-link {
@@ -48,13 +49,51 @@ nav {
 
 
 #hero {
-    background-image: url(/images/bg-curvy-mobile.svg);
+
+    .bg-curve {
+        background-image: url(/images/bg-curvy-mobile.svg);
+        background-color: var(--IntroEmail);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+        padding-bottom: 5rem;
+    }
+
+    #hero-img {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .top-cta {
+        background-color: var(--MainBackground);
+
+        h1 {
+            font-family: var(--Raleway);
+            font-weight: 700;
+            font-size: 26px;
+        }
+
+        p {
+            width: 90%;
+            margin: 0 auto;
+            font-size: 16px;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .btn {
+        background-color: var(--BlueCTA);
+        color: var(--White);
+        font-family: var(--Raleway);
+        font-weight: 700;
+        padding: 1rem 5rem;
+        border-radius: 30px;
+        margin-bottom: 5rem;
+    }
 }
 
-#hero #hero-img {
-    width: 100%;
-    padding: 1rem;
-}
+
+
 
 
 #info-cards .card {
