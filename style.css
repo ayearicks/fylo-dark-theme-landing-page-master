@@ -1,0 +1,372 @@
+:root {
+  --IntroEmail: hsl(217, 28%, 15%);
+  --MainBackground: hsl(218, 28%, 13%);
+  --FooterBackground: hsl(216, 53%, 9%);
+  --TestimonialsBackground: hsl(219, 30%, 18%);
+  --CyanCTA: hsl(176, 68%, 64%);
+  --BlueCTA: hsl(198, 60%, 50%);
+  --RedError: hsl(0, 100%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Raleway: 'Raleway', sans-serif;
+  --OpenSans: 'Open Sans', sans-serif;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 14px;
+  font-family: var(--OpenSans);
+  background-color: var(--IntroEmail);
+  color: var(--White);
+}
+
+nav {
+  padding: 1rem;
+  margin-top: .5rem;
+  font-family: var(--Raleway);
+}
+
+nav .navbar-brand img {
+  max-width: 50%;
+}
+
+nav #navigation {
+  text-align: center;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  background-color: var(--MainBackground);
+  border-radius: 5px;
+}
+
+nav #navigation .nav-link {
+  color: var(--White);
+}
+
+@media (min-width: 768px) {
+  nav #navigation {
+    background-color: var(--IntroEmail);
+    margin-bottom: 2rem;
+  }
+}
+
+#hero .bg-curve {
+  background-image: url(/images/bg-curvy-mobile.svg);
+  background-color: var(--IntroEmail);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  padding-bottom: 5rem;
+}
+
+#hero #hero-img {
+  width: 100%;
+  padding: 1rem;
+}
+
+#hero .top-cta {
+  background-color: var(--MainBackground);
+}
+
+#hero .top-cta h1 {
+  font-family: var(--Raleway);
+  font-weight: 700;
+  font-size: 26px;
+}
+
+#hero .top-cta p {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 16px;
+  margin-bottom: 2rem;
+}
+
+#hero .btn {
+  background-color: var(--BlueCTA);
+  color: var(--White);
+  font-family: var(--Raleway);
+  font-weight: 700;
+  padding: 1rem 5rem;
+  border-radius: 30px;
+  margin-bottom: 8rem;
+}
+
+@media (min-width: 768px) {
+  #hero .bg-curve {
+    background-image: url(/images/bg-curvy-desktop.svg);
+  }
+  #hero .top-cta {
+    padding: 0 2.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #hero #hero-img {
+    width: 60%;
+    margin-left: 13rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #hero #hero-img {
+    height: 100%;
+    margin: 0 15rem;
+  }
+}
+
+#info-cards {
+  background-color: var(--MainBackground);
+  padding: 0 .5rem;
+}
+
+#info-cards .card {
+  background-color: var(--MainBackground);
+  border: 0;
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+#info-cards .card-img-top {
+  width: 30%;
+  margin: 0 auto;
+}
+
+#info-cards h2 {
+  font-family: var(--Raleway);
+  font-weight: 700;
+}
+
+#info-cards p {
+  font-family: var(--OpenSans);
+}
+
+#productive {
+  background-color: var(--MainBackground);
+  padding: 8rem 0;
+  margin-top: -8rem;
+}
+
+#productive img {
+  width: 100%;
+}
+
+#productive h3 {
+  font-family: var(--Raleway);
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#productive p {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 16px;
+  margin-bottom: 2rem;
+}
+
+#productive #underline {
+  position: relative;
+}
+
+#productive #underline ::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 175px;
+  border-bottom: 2px solid var(--CyanCTA);
+}
+
+#productive #underline .btn {
+  color: var(--CyanCTA);
+  font-size: 16px;
+}
+
+#productive #underline .btn img {
+  text-decoration: underline;
+  height: 25px;
+  width: 25px;
+}
+
+@media (min-width: 768px) {
+  #productive #underline .btn {
+    margin-left: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #productive img {
+    height: 100%;
+  }
+  #productive #underline img {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  #productive #underline .btn {
+    margin-left: 2rem;
+  }
+}
+
+#testimonials {
+  padding: 5rem 0;
+  background-color: var(--MainBackground);
+  background-image: url(/images/bg-quotes.png);
+  background-repeat: no-repeat;
+  background-position: 20px 80px;
+}
+
+#testimonials .quote {
+  background-color: var(--TestimonialsBackground);
+  -webkit-box-shadow: 9px 6px 6px -2px #000000;
+          box-shadow: 9px 6px 6px -2px #000000;
+  margin: 2.5rem 1rem;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 90%;
+}
+
+#testimonials .quote img {
+  border-radius: 50%;
+  height: 30%;
+  padding-right: .5rem;
+}
+
+#testimonials .quote p {
+  line-height: 2;
+}
+
+#testimonials .quote .profile {
+  height: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#testimonials .quote .profile h4 {
+  font-family: var(--Raleway);
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0;
+}
+
+#testimonials .quote .profile p {
+  font-family: var(--OpenSans);
+  margin: 0;
+}
+
+@media (min-width: 576px) {
+  #testimonials {
+    background-position: 60px 80px;
+  }
+}
+
+@media (min-width: 768px) {
+  #testimonials {
+    background-position: 60px 85px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #testimonials {
+    background-position: 130px 85px;
+  }
+  #testimonials .quote {
+    width: 25%;
+  }
+}
+
+#access-bg {
+  background-color: var(--MainBackground);
+  padding: 2.5rem 0;
+}
+
+#access {
+  background-color: var(--TestimonialsBackground);
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 6px 20px -4px #000000;
+          box-shadow: 5px 6px 20px -4px #000000;
+  position: relative;
+  z-index: 99;
+}
+
+#access h5 {
+  font-family: var(--Raleway);
+  font-weight: 700;
+  font-size: 24px;
+}
+
+#access p {
+  font-family: var(--OpenSans);
+  line-height: 2;
+}
+
+#access form input {
+  border: 0;
+  border-radius: 30px;
+  padding: 1rem;
+}
+
+#access form button {
+  color: var(--White);
+  background-color: var(--BlueCTA);
+  border-radius: 30px;
+  padding: 15px 25px;
+  margin: .5rem;
+}
+
+@media (min-width: 1200px) {
+  #access {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}
+
+#footer {
+  background-color: var(--FooterBackground);
+  padding-top: 15rem;
+  margin-top: -15rem;
+  z-index: 0;
+}
+
+#footer .d-flex img {
+  height: 5%;
+  padding-right: .5rem;
+}
+
+#footer .nav-link {
+  color: var(--White);
+  font-family: var(--OpenSans);
+  font-size: 22px;
+}
+
+#footer .social-links {
+  border: 1px solid var(--White);
+  border-radius: 50%;
+  color: var(--White);
+  font-size: 20px;
+  padding: .8rem 1rem;
+  margin: 0 1.5rem;
+}
+
+@media (min-width: 1200px) {
+  #footer {
+    margin-top: -10rem;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 2rem;
+  margin: 0;
+  background-color: var(--FooterBackground);
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
