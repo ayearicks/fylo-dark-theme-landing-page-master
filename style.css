@@ -80,11 +80,127 @@ nav #navigation .nav-link {
   font-weight: 700;
   padding: 1rem 5rem;
   border-radius: 30px;
-  margin-bottom: 5rem;
+  margin-bottom: 8rem;
+}
+
+#info-cards {
+  background-color: var(--MainBackground);
+  padding: 0 .5rem;
 }
 
 #info-cards .card {
-  width: 18rem;
+  background-color: var(--MainBackground);
+  border: 0;
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+#info-cards .card-img-top {
+  width: 30%;
+  margin: 0 auto;
+}
+
+#info-cards h2 {
+  font-family: var(--Raleway);
+  font-weight: 700;
+}
+
+#info-cards p {
+  font-family: var(--OpenSans);
+}
+
+#productive {
+  background-color: var(--MainBackground);
+  padding: 8rem 0;
+  margin-top: -8rem;
+}
+
+#productive img {
+  width: 100%;
+}
+
+#productive h3 {
+  font-family: var(--Raleway);
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#productive p {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 16px;
+  margin-bottom: 2rem;
+}
+
+#productive #underline {
+  position: relative;
+}
+
+#productive #underline ::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  border-bottom: 2px solid var(--CyanCTA);
+}
+
+#productive #underline .btn {
+  color: var(--CyanCTA);
+  font-size: 16px;
+}
+
+#productive #underline .btn img {
+  text-decoration: underline;
+  height: 25px;
+  width: 25px;
+}
+
+#testimonials {
+  padding: 5rem 0;
+  background-color: var(--MainBackground);
+  background-image: url(/images/bg-quotes.png);
+  background-repeat: no-repeat;
+  background-position: 20px 80px;
+}
+
+#testimonials .quote {
+  background-color: var(--TestimonialsBackground);
+  -webkit-box-shadow: 9px 6px 6px -2px #000000;
+          box-shadow: 9px 6px 6px -2px #000000;
+  margin: 2.5rem 1rem;
+  padding: 1.5rem;
+  width: 90%;
+}
+
+#testimonials .quote img {
+  border-radius: 50%;
+  height: 30%;
+  padding-right: .5rem;
+}
+
+#testimonials .quote p {
+  line-height: 2;
+}
+
+#testimonials .quote .profile {
+  height: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#testimonials .quote .profile h4 {
+  font-family: var(--Raleway);
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0;
+}
+
+#testimonials .quote .profile p {
+  font-family: var(--OpenSans);
+  margin: 0;
 }
 
 .attribution {
