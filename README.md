@@ -46,6 +46,4 @@ Users should be able to:
 ## Author
 
 - Website - [Ashley Yearicks](https://yearicks.dev)
-- Twitter - [@jessarin5](https://www.twitter.com/jessarin5)
-- LinkedIn - [Ashley Y](https://www.linkedin.com/in/ashley-yearicks)
-
+- Email - [ashley.yearicks@gmail.com](mailto:ashley.yearicks@gmail.com)
